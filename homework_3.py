@@ -39,8 +39,8 @@ class Friend(Person):
         print(f"Привет, меня зовут {self.name}. Моя профессия {self.occupation}. "
               f"Мое хобби {self.hobby}. У меня {self.edu_status} высшее образование.")
 
-cl1 = Classmate("Иван", "20.02.2000", "студент", True, "11D")
-cl1.introduce()
+cl = Classmate("Иван", "20.02.2000", "студент", True, "11D")
+cl.introduce()
 
 fr1 = Friend("Айбек", "20.02.2000", "студент", True, "футбол")
 fr1.introduce()
