@@ -12,7 +12,7 @@ class ContactList:
     @classmethod
     def add_contact(cls, name, phone_number):
         if not Contact.validate_phone_number(phone_number):
-            except ValueError("Неверный номер телефона")
+            raise ValueError("Неверный номер телефона")
 
         contact = Contact(name, phone_number)
         cls.all_contacts.append(contact)
